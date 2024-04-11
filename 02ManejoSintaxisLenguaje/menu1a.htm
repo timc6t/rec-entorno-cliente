@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        float: left;
+      }
+    </style>
+  </head>
+  <script>
+    function iniciar() {
+      /*var div1 = document.createElement("div");
+      //div1.addEventListener("click");
+      document.body.appendChild(div1);
+      div1.innerHTML = "Opción 1";
+
+      var div2 = document.createElement("div");
+      //div2.addEventListener("click");
+      document.body.appendChild(div2);
+      div2.innerHTML = "Opción 2";
+
+      var div3 = document.createElement("div");
+      //div3.addEventListener("click");
+      document.body.appendChild(div3);
+      div3.innerHTML = "Opción 3";
+
+      var p = document.createElement("p");
+      documment.body.appendChild(p);
+      p.innerHTML = "Pos oc";*/
+      var div1 = document.getElementById("div1");
+    }
+
+    function textosAle() {
+      var textos = [
+        "Explora el mundo con pasión y curiosidad.",
+        "Ríe cada día y contagia alegría a tu alrededor.",
+        "Ama profundamente, sin miedo a ser vulnerable.",
+      ];
+    }
+
+    window.onload = iniciar;
+  </script>
+  <body>
+    <h1>Menú</h1>
+    <div id="div1" onclick="textosAle()">Opción 1</div>
+    <div id="div2" onclick="textosAle()">Opción 2</div>
+    <div id="div3" onclick="textosAle()">Opción 3</div>
+    <p id="texto"></p>
+    <!--
+      Actividad
+      (menu1a)
+      Desarrollar el programa en js:
+      - Crea un menu con tres nodos "div". Crea un nodo "p"
+      - Al pulsar cada "div" se deba cargar un texto en el nodo "p"
+      - Los textos deben ser diferentes y de 80 caracteres.
+      - Usar "float:left" para el layout
+      - Crear una función para obtener un número aleatorio entre dos numeros.
+    -->
+  </body>
+</html>
